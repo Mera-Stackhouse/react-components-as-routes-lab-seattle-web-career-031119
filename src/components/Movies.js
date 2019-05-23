@@ -6,7 +6,7 @@ class Movies extends React.Component {
   renderMovies = () => {
     return movies.map(m => {
       return (
-        <div key={m.id}>
+        <div key={m.name}>
           <p>{m.title}</p>
           <p>{m.time} mins</p>
           <ul>{m.genres.map(g => <li key={g}>{g}</li>)}</ul>
